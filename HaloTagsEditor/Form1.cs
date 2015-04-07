@@ -103,6 +103,7 @@ namespace HaloTagsEditor
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            this.MainMenuStrip = STEMenu;
             weapons = new Dictionary<string, string> {
                 {"Spiker", "00150000"},
                 {"Beam Rifle", "09150000"},
@@ -170,10 +171,10 @@ namespace HaloTagsEditor
                 {"Plasma Pistol", "5C220000"},
                 {"Plasma Pistol (Charged)", "5E220000"},
             };
-            foreach(KeyValuePair<string,string> proj in projectiles)
+            /*foreach(KeyValuePair<string,string> proj in projectiles)
             {
                 comboBox2.Items.Add(proj.Key);
-            }
+            }*/
             foreach(KeyValuePair<string,string> weap in weapons)
             {
                 comboBox1.Items.Add(weap.Key);
